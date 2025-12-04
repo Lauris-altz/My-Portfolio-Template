@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello World</title>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <p>This is a basic HTML page.</p>
+</body>
+</html>
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — Minimal & Experimental</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <meta name="color-scheme" content="light dark">
+  <style>
+    :root{
+      --bg:#0f1113;
+      --panel:#0b0c0d;
+      --muted:#9aa0a6;
+      --accent:#e6e6e6;
+      --glass: rgba(255,255,255,0.03);
+      --radius:18px;
+      --gap:28px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;}
+    body{
+      margin:0; background:linear-gradient(180deg,var(--bg),#050506 60%); color:var(--accent); -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+      overflow-y:scroll; scroll-behavior:smooth;
+    }
+    /* Layout */
+    .wrap{max-width:1100px;margin:6vh auto;padding:40px;display:grid;grid-template-columns:1fr;gap:var(--gap)}
+
+    header{display:flex;justify-content:space-between;align-items:center;gap:20px}
+    .brand{font-weight:800;letter-spacing:-0.02em;font-size:20px}
+    nav{display:flex;gap:18px;align-items:center}
+    nav a{color:var(--muted);text-decoration:none;font-weight:500}
+    nav a:hover{color:var(--accent)}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:40px;align-items:center}
+    .intro h1{margin:0;font-size:48px;line-height:1.02}
+    .intro p{color:var(--muted);margin-top:12px;max-width:46ch}
+
+    /* Experimental panel */
+    .panel{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:var(--radius);padding:28px;backdrop-filter: blur(6px);box-shadow:0 6px 30px rgba(0,0,0,0.6)}
+    .visual{height:320px;border-radius:12px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+
+    /* Project grid */
+    .projects{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:6vh}
+    .card{background:var(--panel);border-radius:14px;padding:20px;min-height:160px;display:flex;flex-direction:column;justify-content:space-between;transition:transform .5s cubic-bezier(.2,.9,.2,1),box-shadow .35s;cursor:pointer}
+    .card:hover{transform:translateY(-12px) rotate(-1deg);box-shadow:0 18px 40px rgba(0,0,0,0.6)}
+    .card h3{margin:0;font-size:18px}
+    .card p{color:var(--muted);margin:8px 0 0;font-size:13px}
+
+    /* Footer / contact */
+    footer{display:flex;justify-content:space-between;align-items:center;padding-top:24px;border-top:1px solid rgba(255,255,255,0.02);color:var(--muted)}
+
+    /* Small screens */
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr;}
+      .projects{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:600px){
+      .projects{grid-template-columns:1fr}
+      .wrap{padding:20px;margin-top:4vh}
+      .intro h1{font-size:34px}
+    }
+
+    /* Cursor blob (experimental) */
+    .blob{position:fixed;top:0;left:0;width:48px;height:48px;border-radius:50%;pointer-events:none;transform:translate(-50%,-50%);mix-blend-mode:screen;opacity:0.85;z-index:9999;transition:width .18s,height .18s}
+    .blob::after{content:'';display:block;width:100%;height:100%;background:radial-gradient(circle at 30% 30%, rgba(255,255,255,0.18), rgba(255,255,255,0.06));border-radius:inherit}
+
+    /* Subtle decorative grid lines */
+    body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(to right, rgba(255,255,255,0.01) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.01) 1px, transparent 1px);background-size:120px 120px;opacity:.3;pointer-events:none}
+
+    /* Accessibility focus */
+    a:focus{outline:2px dashed #ffffff44;outline-offset:4px}
+  </style>
+</head>
+<body>
+  <div class="blob" id="blob" aria-hidden="true"></div>
+
+  <main class="wrap" id="main">
+    <header>
+      <div class="brand">LAURA • Studio</div>
+      <nav>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="intro">
+        <div class="panel">
+          <h1>Minimalista. Experimental.</h1>
+          <p>Diseño gráfico, dirección de arte e ilustración aplicada a branding y audiovisuales. Portfolio seleccionado con piezas reducidas a su idea esencial.</p>
+          <div style="margin-top:18px;display:flex;gap:12px;align-items:center">
+            <a href="#work" style="color:var(--accent);text-decoration:none;font-weight:600">Ver proyectos →</a>
+            <span style="color:var(--muted)">•</span>
+            <a href="#contact" style="color:var(--muted);text-decoration:none">Email</a>
+          </div>
+        </div>
+      </div>
+
+      <aside class="visual panel" aria-hidden="true">
+        <!-- Experimental canvas: simple animated SVG shapes -->
+        <svg viewBox="0 0 600 360" preserveAspectRatio="xMidYMid meet" style="width:100%;height:100%">
+          <defs>
+            <linearGradient id="g" x1="0" x2="1">
+              <stop offset="0%" stop-color="#ffffff" stop-opacity="0.08" />
+              <stop offset="100%" stop-color="#ffffff" stop-opacity="0.02" />
+            </linearGradient>
+            <filter id="blur"><feGaussianBlur stdDeviation="18"/></filter>
+          </defs>
+          <rect x="0" y="0" width="600" height="360" fill="url(#g)" />
+          <g filter="url(#blur)">
+            <circle cx="140" cy="220" r="80" fill="#ffffff" opacity="0.03">
+              <animate attributeName="cx" dur="12s" values="120;480;120" repeatCount="indefinite" />
+            </circle>
+            <ellipse cx="420" cy="110" rx="110" ry="50" fill="#ffffff" opacity="0.02">
+              <animate attributeName="cy" dur="10s" values="110;280;110" repeatCount="indefinite" />
+            </ellipse>
+          </g>
+          <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="18" fill="rgba(255,255,255,0.06)" font-family="Inter, sans-serif">experimental panel</text>
+        </svg>
+      </aside>
+    </section>
+
+    <section id="work">
+      <h2 style="margin:0 0 18px;font-weight:700">Selected projects</h2>
+      <div class="projects">
+        <article class="card" tabindex="0" role="button" aria-pressed="false">
+          <div>
+            <h3>Stand Up — Campaign</h3>
+            <p>Packaging e ilustración para campaña contra el acoso. Serie de posavasos y assets para redes.</p>
+          </div>
+          <small style="color:var(--muted)">Branding · Ilustración</small>
+        </article>
+
+        <article class="card" tabindex="0" role="button" aria-pressed="false">
+          <div>
+            <h3>Joy — Travel App Concept</h3>
+            <p>Interfaz de usuario y prototipo microinteractivo para una app de viajes de alto nivel.</p>
+          </div>
+          <small style="color:var(--muted)">UI · Prototipo</small>
+        </article>
+
+        <article class="card" tabindex="0" role="button" aria-pressed="false">
+          <div>
+            <h3>Así empezó todo — Audiovisual</h3>
+            <p>Video autobiográfico y canción que narran un proceso creativo. Dirección y edición.</p>
+          </div>
+          <small style="color:var(--muted)">Video · Dirección</small>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" style="margin-top:6vh">
+      <div class="panel">
+        <h3 style="margin-top:0">Sobre mí</h3>
+        <p style="color:var(--muted);margin:6px 0 0">Soy Laura — diseñadora gráfica e ilustradora. Trabajo con branding, packaging y proyectos audiovisuales que mezclan imagen y voz. Me interesan las soluciones visuales reducidas a su esencia.</p>
+      </div>
+    </section>
+
+    <footer id="contact">
+      <div style="display:flex;flex-direction:column">
+        <strong>Contacto</strong>
+        <a href="mailto:laura@example.com" style="color:var(--muted);text-decoration:none;margin-top:6px">laura@example.com</a>
+      </div>
+      <div style="text-align:right;color:var(--muted)">Made with ✦ Minimal & Experimental</div>
+    </footer>
+  </main>
+
+  <script>
+    // Cursor blob
+    const blob = document.getElementById('blob');
+    document.addEventListener('pointermove', (e)=>{
+      blob.style.left = e.clientX + 'px';
+      blob.style.top = e.clientY + 'px';
+    });
+    // Enlarge on interactive elements
+    document.querySelectorAll('a,button,[role="button"]').forEach(el=>{
+      el.addEventListener('pointerenter', ()=>{ blob.style.width='110px'; blob.style.height='110px'; });
+      el.addEventListener('pointerleave', ()=>{ blob.style.width='48px'; blob.style.height='48px'; });
+    });
+
+    // Keyboard accessibility: press Enter to open project (placeholder)
+    document.querySelectorAll('.card').forEach(card=>{
+      card.addEventListener('keydown', (e)=>{
+        if(e.key === 'Enter' || e.key === ' '){
+          card.animate([{transform:'scale(1)'},{transform:'scale(.98)'},{transform:'scale(1)'}],{duration:220});
+          // replace with navigation
+          alert(card.querySelector('h3').innerText + " — abrir proyecto (ejemplo)");
+        }
+      });
+      card.addEventListener('click', ()=>{ alert(card.querySelector('h3').innerText + " — abrir proyecto (ejemplo)"); });
+    });
+  </script>
+</body>
+</html>
