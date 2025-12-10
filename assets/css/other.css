@@ -1,0 +1,15 @@
+/* Utilidades, helpers y reglas extra */
+
+.u-center {
+  text-align: center;
+}
+
+.u-hidden {
+  display: none !important;
+}
+
+/* Ajustes finos de tipografía o spacing específicos */
+.small-text {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
