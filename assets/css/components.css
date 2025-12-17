@@ -44,7 +44,7 @@
   background-color: #ddd;
 }
 
-/* puedes asignar imágenes reales así */
+/* añadir imágenes */
 .project:nth-child(1) .project-image {
   background-image: url('../images/proyecto1.jpg');
 }
@@ -90,3 +90,15 @@
   background: var(--blue);
   color: var(--bg);
 }
+.page-simple {
+  padding: 60px 24px 80px;
+}
+
+.page-simple h1 {
+  font-size: 32px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--blue);
+  margin-bottom: 24px;
+}
+

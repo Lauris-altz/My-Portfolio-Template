@@ -23,6 +23,9 @@ body {
 
 body {
   font-family: var(--font-sans);
-  background: #ffffff;   /* antes #000 */
+  background: #ffffff;   
   color: var(--fg);
+  margin: 0;       
+  padding: 0;      
 }
+
