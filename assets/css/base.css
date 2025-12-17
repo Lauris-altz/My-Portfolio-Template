@@ -1,0 +1,31 @@
+:root {
+  --bg: #ffffff;
+  --fg: #000000;
+  --blue: #2055d8;
+  --gray: #8b8b8b;
+  --border: #dcdcdc;
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+    Arial, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-family: var(--font-sans);
+  background: #ffffff;   
+  color: var(--fg);
+  margin: 0;       
+  padding: 0;      
+}
+
