@@ -65,3 +65,13 @@
     padding: 0 20px 30px;
   }
 }
+.projects-all {
+  padding-top: 40px;
+}
+.projects-grid-all {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));  
+  gap: 16px;                           /* ← MENOS SEPARACIÓN */
+  margin-top: 12px;                    /* ← MENOS MARGEN ARRIBA */
+}
+
