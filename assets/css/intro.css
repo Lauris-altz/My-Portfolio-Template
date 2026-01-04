@@ -1,0 +1,86 @@
+:root {
+  --bg: #ffffff;
+  --fg: #000000;
+  --blue: #2055d8;
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+    Arial, sans-serif;
+}
+
+/* página centrada, fondo blanco */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--bg);
+  color: var(--fg);
+}
+
+.intro-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* centro vertical */
+  align-items: center;       /* centro horizontal */
+  gap: 40px;
+}
+
+/* cinta horizontal en bucle */
+
+
+
+.marquee-inner {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 18s linear infinite;
+}
+
+.marquee-inner span {
+  font-size: 30px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--blue);
+  padding-right: 3rem; /* espacio entre repeticiones */
+}
+
+/* animación: se mueve de derecha a izquierda sin cortes */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* botón VER MÁS */
+
+.intro-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 40px;
+  border-radius: 999px;
+  border: 1px solid var(--blue);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.intro-button:hover {
+  background: var(--blue);
+  color: var(--bg);
+}

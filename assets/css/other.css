@@ -1,4 +1,4 @@
-/* Utilidades, helpers y reglas extra */
+/* Utilidades, ayudas y reglas extra */
 
 .u-center {
   text-align: center;
@@ -8,7 +8,7 @@
   display: none !important;
 }
 
-/* Ajustes finos de tipografía o spacing específicos */
+/* Ajustes de tipografía o spacing específicos */
 .small-text {
   font-size: 0.8rem;
   color: var(--muted);

@@ -102,3 +102,12 @@
   margin-bottom: 24px;
 }
 
+/* LOGO CLICKABLE SIN CAMBIOS VISUALES */
+.brand {
+  text-decoration: none;      /* quita subrayado */
+  cursor: pointer;           /* mano al pasar ratón */
+}
+
+.brand:hover {
+  opacity: 0.8;              /* sutil efecto hover  */
+}

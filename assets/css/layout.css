@@ -78,17 +78,14 @@
 /* para about.html y contact.html */
 .page-simple h1,
 .page-simple .projects-title {
- 
-  
   justify-content: center;              /* ← CENTRO VERTICAL */
   text-align: center;                   /* texto también centrado */
-}
-
   font-size: 32px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--blue) !important;   /* ← AZUL COMO PROJECTS */
   margin-bottom: 24px;
+}
 
 .page-simple p, 
 .page-simple .projects-description {
