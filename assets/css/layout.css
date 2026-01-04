@@ -97,3 +97,20 @@
   color: var(--blue) !important;   /* ← AZUL COMO PROJECTS */
   line-height: 1.6;
 }
+/* CENTRADO COMPLETO DE BOTÓN EN PÁGINAS SIMPLE */
+.page-simple {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 24px;
+  gap: 24px;          /* ← separa título-texto-botón automáticamente */
+  text-align: center;
+  overflow: hidden;   
+}
+
+.page-simple .btn-explore {
+  display: block !important;  /* ← fuerza centrado */
+  margin: 0 auto;             /* ← centrado horizontal */
+}
