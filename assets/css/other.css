@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /* Utilidades, ayudas y reglas extra */
+=======
+/* Utilidades, helpers y reglas extra */
+>>>>>>> e2b06069e1e33bb403791b6a4f56595abf26e7da
 
 .u-center {
   text-align: center;
@@ -8,7 +12,11 @@
   display: none !important;
 }
 
+<<<<<<< HEAD
 /* Ajustes de tipografía o spacing específicos */
+=======
+/* Ajustes finos de tipografía o spacing específicos */
+>>>>>>> e2b06069e1e33bb403791b6a4f56595abf26e7da
 .small-text {
   font-size: 0.8rem;
   color: var(--muted);
