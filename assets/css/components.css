@@ -111,3 +111,73 @@
 .brand:hover {
   opacity: 0.8;              /* sutil efecto hover  */
 }
+
+/* form */
+.contact-section {
+  background: var(--color-canvas-default, white);
+  border: 1px solid var(--color-border-default, #d0d7de);
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.contact-section h2 {
+  margin-top: 0;
+  color: var(--color-fg-default, #0969da);
+  font-size: 24px;
+}
+
+.contact-section p {
+  color: var(--color-fg-muted, #0969da);
+  margin-bottom: 32px;
+}
+
+.form-group {
+  margin-bottom: 24px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: var(--color-fg-default, #0969da);
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--color-border-default, #d0d7de);
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--color-accent-fg, #0969da);
+  box-shadow: 0 0 0 3px rgba(0, 119, 255, 0.1);
+}
+
+.submit-btn {
+  background: var(--color-accent-fg, #0969da);
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  width: 100%;
+}
+
+.submit-btn:hover {
+  background: #0d5db7;
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    margin: 0 16px;
+    padding: 32px 20px;
+  }
+}
