@@ -82,6 +82,9 @@
 .project:nth-child(3) .project-image2 {
   background-image: url('../images/coche.jpg');
 }
+.project:nth-child(4) .project-image2 {
+  background-image: url('../images/ajedrez.JPG');
+}
 
 .project-caption {
   font-size: 10px;
