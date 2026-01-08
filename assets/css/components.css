@@ -43,22 +43,44 @@
   background-position: center;
   background-color: #ddd;
 }
+.project-image2{
+  width: 100%;
+  aspect-ratio: 3 / 4;  
+  background-size: cover;
+  background-position: center;
+  background-color: #ddd;
+}
 
 /* añadir imágenes */
 .project:nth-child(1) .project-image {
-  background-image: url('../images/proyecto1.jpg');
+  
+  background-image: url('../images/pierogarnia.jpg');
 }
 
 .project:nth-child(2) .project-image {
-  background-image: url('../images/proyecto2.jpg');
+  background-image: url('../images/caperucita.jpg');
 }
 
 .project:nth-child(3) .project-image {
-  background-image: url('../images/proyecto3.jpg');
+  background-image: url('../images/refran.png');
 }
 
 .project:nth-child(4) .project-image {
-  background-image: url('../images/proyecto4.jpg');
+  background-image: url('../images/turquia.jpg');
+}
+
+/* añadir imágenes 2 !!!! */
+.project:nth-child(1) .project-image2 {
+
+  background-image: url('../images/cracovia.JPG');
+}
+
+.project:nth-child(2) .project-image2 {
+  background-image: url('../images/nuevayork.JPG');
+}
+
+.project:nth-child(3) .project-image2 {
+  background-image: url('../images/coche.jpg');
 }
 
 .project-caption {
@@ -69,6 +91,7 @@
   margin-top: 8px;
   line-height: 1.5;
 }
+
 
 /* botón */
 
