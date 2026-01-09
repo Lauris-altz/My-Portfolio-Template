@@ -79,11 +79,10 @@
 
 /* para about.html y contact.html */
 .page-simple h1,
-.page-simple,
-.projects-title {
+.page-simple .projects-title {
   justify-content: center;              /* ← CENTRO VERTICAL */
   text-align: center;                   /* texto también centrado */
-  font-size: 2px;
+  font-size: 32px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--blue) !important;   /* ← AZUL COMO PROJECTS */
@@ -105,9 +104,35 @@
   justify-content: center;
   align-items: center;
   padding: 40px 24px;
-  gap: 50px;        
+  gap: 50px;
   text-align: center;
   overflow: hidden;
+}
+
+/* Global responsive tweaks */
+@media (max-width: 900px) {
+  .main-header {
+    padding: 20px;
+  }
+
+  .projects-description {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-header {
+    padding: 14px;
+  }
+
+  .projects-description {
+    font-size: 11px;
+  }
+
+  footer {
+    padding: 18px 12px;
+    font-size: 13px;
+  }
 }
 
 .page-simple .btn-explore {
@@ -139,3 +164,35 @@ footer a:hover {
   text-decoration: underline;
 } 
 
+/* ===== RESPONSIVE SIN ROMPER EXISTENTE ===== */
+@media (max-width: 768px) {
+  
+  /* NO TOQUE body existente */
+  .main-nav {
+    flex-direction: column !important;
+    gap: 0.5rem;
+  }
+  
+  .projects-grid,
+  .projects {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem;
+  }
+  
+  /* Tipos fluidos */
+  h1 { font-size: 2rem !important; }
+  h2 { font-size: 1.5rem !important; }
+  
+  /* Botones/nav full */
+  nav a, button, .btn {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Motion OK */
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.01ms !important; }
+}

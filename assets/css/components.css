@@ -206,3 +206,10 @@
     padding: 32px 20px;
   }
 }
+a[href*="instagram"] {
+  color: #0d5db7;
+  text-decoration: none;
+}
+a[href*="instagram"]:hover {
+  text-decoration: underline;
+}
