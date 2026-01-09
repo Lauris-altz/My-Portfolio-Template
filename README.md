@@ -31,24 +31,21 @@ Index
 ├── LICENSE            # MIT License
 └── README.md          # Este archivo
 
+
 Customization guide
 
 Content: index.html:
-
 - Línea 20-30: Cambiar nombre, bio
 - Línea 80-120: Proyectos (títulos, links GitHub, demos)
 - Línea 150: Contacto, redes sociales
 
-Colours: assets/css/base.css:
-
-:root {
+Colours: assets/css/base.css::root {
   --primary: #tu-color;    /* Actual: azul */
   --accent: #otro-color;   /* Botones */
   --bg: #f8fafc;          /* Fondo */
 }
 
 Typography: assets/css/base.css:
-
 --font-main: "Tu Font", system-ui;
 Images:  assets/images/lorem.jpg, profile.jpg
 Optimizar < 200KB (TinyPNG.com)
